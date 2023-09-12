@@ -1,4 +1,4 @@
-## Structure
+## Structure 
 
 ### 1. 
 
@@ -53,7 +53,10 @@ Below is a detailed breakdown of its content:
 A build script utilized by the `make` tool. It outlines rules and dependencies for compiling and linking the kernel components.
 
 #### 4. `arch`
-A pivotal directory containing architecture-specific code and configurations. It accounts for the various requirements of different architectures such as x86, ARM, and MIPS.
+This directory is the abode for architecture-specific code for various CPU architectures. Within `arch`, you'll find sub-directories for each supported architecture like `alpha`, `amd64`, `arm`, `i386`, `mips64`, and others. Each of these sub-folders houses:
+- `conf`: Kernel configuration files tailored for that architecture.
+- `include`: Essential header files for the architecture.
+- Other architecture-specific files and drivers.
 
 #### 5. `conf`
 Traditionally houses kernel configuration files. These configurations guide which modules, drivers, and options are integrated during the kernel compilation.
@@ -65,5 +68,5 @@ Home to cryptographic algorithms and related kernel-level cryptographic operatio
 An abbreviation for "Dynamic Debugging Technique". This is OpenBSD's built-in kernel debugger. The directory holds files pivotal for debugging kernel-level issues.
 
 #### 8. `dev`
-Primarily contains device driver code, facilitating the communication between the OS and hardware devices.
-
+Hosts the device driver code. Inside `dev`, there's:
+- `acpi`: Pertains to the Advanced Configuration and Power Interface, instrumental for power management and hardware configuration.
