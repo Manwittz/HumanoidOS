@@ -1,6 +1,6 @@
-## Directory Structure
+## Structure
 
-### 1.
+### 1. 
 
 ### 2. `Makefile`
 A build script for the `make` tool. Defines rules and dependencies for compiling and linking the project components.
@@ -43,3 +43,27 @@ A reservoir for shared resources and utilities that can be used system-wide, ens
 
 ### 15. `sys`
 The kernel's heart. This directory contains the source code, configurations, and related files for the system's kernel.
+Below is a detailed breakdown of its content:
+
+#### 1. 
+
+#### 2. 
+
+#### 3. `Makefile`
+A build script utilized by the `make` tool. It outlines rules and dependencies for compiling and linking the kernel components.
+
+#### 4. `arch`
+A pivotal directory containing architecture-specific code and configurations. It accounts for the various requirements of different architectures such as x86, ARM, and MIPS.
+
+#### 5. `conf`
+Traditionally houses kernel configuration files. These configurations guide which modules, drivers, and options are integrated during the kernel compilation.
+
+#### 6. `crypto`
+Home to cryptographic algorithms and related kernel-level cryptographic operations. Ensures data security and integrity at the system level.
+
+#### 7. `ddb`
+An abbreviation for "Dynamic Debugging Technique". This is OpenBSD's built-in kernel debugger. The directory holds files pivotal for debugging kernel-level issues.
+
+#### 8. `dev`
+Primarily contains device driver code, facilitating the communication between the OS and hardware devices.
+
